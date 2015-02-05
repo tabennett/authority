@@ -19,6 +19,7 @@ class DispatcherTest extends PHPUnit_Framework_TestCase
 
     public function testInitializeEvent()
     {
+        date_default_timezone_set('UTC');
         $test = new stdClass;
         $user = new stdClass;
         $user->name = 'Tester';
